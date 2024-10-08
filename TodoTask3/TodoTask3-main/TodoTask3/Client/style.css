@@ -1,0 +1,223 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  color: white;
+}
+
+#ro {
+  max-width:100%;
+  height: 580px;
+  margin: 0.5rem auto;
+  padding: 0 1rem;
+  background: white;
+}
+
+form {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+[type="text"],
+button {
+  display: inline-block;
+  -webkit-appearance: none;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  background: #B8B8B8;
+  color: black;
+  margin: 0 .5rem;
+}
+
+[type="text"] {
+  width: 100%;
+}
+
+[type="checkbox"] {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+h1 {
+  color: #222;
+  text-align: center;
+  padding-right: 80px;
+  padding-top: 40px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+  background: #B8B8B8;
+  border-radius: 4px;
+}
+
+li span {
+  display: inline-block;
+  padding: .5rem;
+  width: 420px;
+}
+
+#filterButtons{
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.fa-trash,
+.fa-check{
+pointer-events: none;
+
+}
+
+.buttons{
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.all{
+float: left;
+width: 7rem;
+padding: 0.7rem;
+border-radius: 20px;
+cursor: pointer;
+background: #B8B8B8;
+color: black;
+}
+.active{
+  float: left;
+  width: 7rem;
+  padding: 0.7rem;
+border-radius: 20px;
+cursor: pointer;
+background: #B8B8B8;
+color: black;
+}
+.complete{
+  float: left;
+  width: 7rem;
+  padding: 0.7rem;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #B8B8B8;
+  color: black;
+}
+
+.topBtn {
+  float: right;
+  width: 7rem;
+  padding: 0.7rem;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #B8B8B8;
+  color: black;
+}
+
+#empty{
+  width:100%;
+  height: 30px;
+}
+
+#user-name{
+  float: left;
+  width: 7rem;
+  padding: 0.7rem;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #B8B8B8;
+  color: black;
+}
+
+.Upload{
+ float: left;
+  width: 7rem;
+  padding: 0.7rem;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #B8B8B8;
+  color: black;
+  }
+  #downloadBtn{
+    float: left;
+    width: 7.2rem;
+    padding: 0.7rem;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #B8B8B8;
+  color: black;
+  }
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+
+
+.header{
+  background: linear-gradient(to right,#B8B8B8,#B8B8B8);
+  height: 120px;
+  width: auto;
+  position: relative;
+  top: 0;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  
+}
+
+.header .icon img{
+  height: 70px;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+}
+
+
+#username{
+  position: absolute;
+  width:150px;
+  height: 50px;
+  left: 25px;
+  color:  black !important;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+
+  @-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}

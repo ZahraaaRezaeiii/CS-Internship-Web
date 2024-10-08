@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    background-color: rgb(225, 225, 225);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+	width: 100%;
+	min-height: 350px;
+    min-width: 320px;
+    box-sizing: border-box;
+}
+
+
+#picture {
+  float: left;
+  padding-top: 3px;
+}
+
+#menu {
+  float: left;
+}
+
+#menu:hover {
+  background-color: #ccc;
+}
+
+#time:hover {
+  background-color: #ccc;
+}
+
+#picture:hover {
+  background-color: #ccc;
+}
+
+#time {
+  display: none;
+}
+
+.hi {
+  font-size: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#memories {
+  padding-left: 20px;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+#yet {
+  width: 33%;
+  float: right;
+  padding-left: 20px;
+  padding-top: 28px; 
+  font-size: 13px;"
+}
+
+/*-----------------*/
+#standard {
+  height: 100%;
+  width: 67%; 
+  float: left; 
+  padding-top: 0px;
+  font-size: 18px;
+}
+/*-----------------*/
+#std {
+  padding-left: 12px; 
+  padding-right: 12px; 
+  float: left;
+}
+
+#zero{
+  width: 100%;
+  height: 14%;
+}
+
+#result {
+  width: 67%;
+  text-align: right;
+  font-size: 40px;
+}
+
+/* Start the header consist of calculator and iconsclose, minimise, maximise */
+.first{
+  background-color: rgb(225, 225, 225);
+  padding: 3px;
+  font-size: 10px;
+  height: 7%;
+}
+
+.second{
+  background-color: rgb(225, 225, 225);
+  padding: 3px;
+  padding-bottom: 0px;
+  font-size: 10px;
+  height: 9%;
+}
+
+#firstcalculator{
+  margin-left: 10px;
+  padding: 10px;
+  padding-bottom: 6px;
+  font-family: 'Segoe UI';
+  height: 100%;
+}
+
+.main{
+  height: 70%;
+  position: relative;
+
+}
+
+#lasttd {
+	display: none;
+}
+
+.threes{
+	height: 100%;
+	width: 100%;
+}
+
+.center{
+  position: absolute;
+  /*top: 15%;*/
+  width: 67%;
+  height: 100%;
+}
+
+.closeminmaxicon{
+  float: right;
+  height: 100%;
+}
+
+.standard{
+  height: 20px;
+  width: 20px;
+  float: left;
+  margin: 0px;
+}
+
+.menu{
+  height:100%;
+  width: 23px;
+  float: left;
+  margin-left: 0px;
+}
+
+#close, .time{
+  padding-right: 5px;
+  margin-left: 3px;
+  margin-bottom: 15px;
+}
+
+.minmax:hover{
+  background-color: #ccc;
+  width: 60px;
+  height: 100%;
+  padding: 15px;
+  padding-bottom: 11px;
+  margin: 0px;
+}
+
+#close:hover{
+  background-color: red;
+  width: 32px;
+  height: 100%;
+  padding: 14px;
+  padding-bottom: 11px;
+  margin: 0px;
+}
+
+#close{
+  height: 100%;
+  width: 25px;
+  font-size: 15px;
+  margin-left: 13px;
+  margin-right: 10px;
+}
+
+.minmax{
+  height: 100%;
+  padding-right: 5px;
+  margin-left: 13px;
+  margin-right: 11px;
+  margin-bottom: 10px;
+  width: 25px;
+  font-size: 14px;
+}
+
+.time{
+  padding-right: 5px;
+  margin-left: 13px;
+  margin-right: 11px;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 25px;
+  font-size: 14px;  
+}
+
+.top {
+  width: 10%;
+  height:10%;
+}
+#toppestbuttons {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#toppestbuttons td {
+  border: 1px solid rgb(225, 225, 225);
+  padding: 2px;
+  background-color: rgb(225, 225, 225);
+  max-width: 0px;
+  font-size: 15px;
+  height: 100%;
+}
+
+#toppestbuttons td:hover{
+	background-color: #ddd;
+}
+
+#toppestbuttons .tp:hover{
+	background-color: rgb(225,225,225);
+}
+
+#ms {
+  display: none;
+}
+
+#buttons {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  font-weight: 600;
+}
+
+#buttons td {
+  border: 1px solid rgb(225, 225, 225);
+  padding: 6px;
+  background-color: #f2f2f2;
+  max-width: 0px;
+}
+
+
+#buttons td:hover{
+  background-color: rgb(218, 218, 218);
+}
+ 
+#buttons .number{
+  background-color: white;
+}
+
+#buttons .blue:hover{
+  background-color: blue;
+}
+
+/* Clear floats after the columns */
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #f1f1f1;
+}
+
+.threes:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #f1f1f1;
+}
+#memory {
+  display: flex; 
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+.top {
+	width: 50%;
+}
+/*
+.row {
+  display:collapse;
+  display: none;
+}
+*/
+
+.row {
+	display: none;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+	
+	.top {
+		width: 90%;
+		height: 10%;
+	}
+	
+	#standard {
+	  width: 100%;
+	}
+
+    #time {
+	  display: table;
+	  float: right;
+	}
+    .center{
+      width: 100%;
+
+	  bottom: 0px;
+    }
+	
+	.hi {
+	  display: none;
+	}
+/*
+	.main{
+	  height: 75%;
+	}*/
+	
+	#ms {
+	  display: block;
+	  width: 30px;
+	  height: 20px;
+	  padding-left: 20px;
+	  padding-top: 10px;
+	}
+	
+	#buttons {
+	  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	  height: 90%;
+	  text-align: center;
+	  font-weight: 600;
+	}
+
+	#buttons td {
+	  border: 1px solid rgb(225, 225, 225);
+	  padding: 6px;
+	  background-color: #f2f2f2;
+	  max-width: 0px;
+	  height: px;
+	}
+    #result {
+	  width: 100%;
+	  text-align: right;
+	  font-size: 50px;
+    }
+	
+	.rows {
+		display: none;
+	}
+
+	.row {
+        display: contents;
+	}
+
+    #lasttd {
+		display: table-cell;
+	}
+}
